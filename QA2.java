@@ -6,9 +6,9 @@ public class QA2 {
     public static void main(String[] args) throws IOException {
         String inputFile = "C:\\Users\\ASUS\\IdeaProjects\\try\\src\\Input_02.txt";
         // copy the path of the file for input (input 1 and input 2 ) which will be stored in String datatype
-        List<String> inputWords = extractWordsFromFile(inputFile);
+        List<String> inputWords = extractWordsFromFile(inputFile); // The method extractWordsFromFile(inputFile) is responsible for reading words from a file
 
-        long processingStart = System.currentTimeMillis();
+        long processingStart = System.currentTimeMillis(); // currentTimeMillis() is used to measure how long it takes to process the input file and find the compound words.
 
         String[] longestWords = determineLongestCompoundWords(inputWords);
 
@@ -49,7 +49,7 @@ public class QA2 {
             }
         }
 
-        return new String[]{primaryLongest, secondaryLongest};
+        return new String[]{primaryLongest, secondaryLongest}; // is used to return the results from the method determineLongestCompoundWords
     }
 
     private static boolean isConstructedFromOtherWords(String candidate, Set<String> uniqueWords, boolean isOriginal) {
