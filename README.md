@@ -1,5 +1,5 @@
 # DS
-Word Composition Problem. Click to read
+Word Composition Problem. 
 
 Longest Compound Word Program
 Overview
